@@ -1,0 +1,28 @@
+# include <stdio.h>
+# include <string.h>
+
+int main()
+{
+	char m[1005][20];
+	int b[1005],n,x,i;
+
+	scanf("%d",&n);
+
+	for(i=0;i<n;i++)
+	{
+		int s,a;
+		scanf("%s %d %d",m[0],&s,&a);
+		strcpy(m[s],m[0]);
+		b[s]=a;
+	}
+
+	scanf("%d",&n);
+
+	for(i=0;i<n;i++)
+	{
+		scanf("%d",&x);
+		printf("%s %d\n",m[x],b[x]);
+	}
+	
+	return 0;
+}
